@@ -1,11 +1,11 @@
 PODS:
-  - Sourcery (0.8.0)
+  - Sourcery (0.9.0)
 
 DEPENDENCIES:
   - Sourcery
 
 SPEC CHECKSUMS:
-  Sourcery: c5c099c4786fed4c24febd5edb25a8ea1b45b40d
+  Sourcery: e3829460a1fa0bcd3b689e6087a89cc063cd2289
 
 PODFILE CHECKSUM: 5502b2ed85b07fb3bd92dc70f82861a96f2c3470
 

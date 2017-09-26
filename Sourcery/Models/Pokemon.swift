@@ -15,9 +15,7 @@ enum PokemonType {
 	case electric
 }
 
-// sourcery: AutoJSONSerializable, AutoJSONDeserializable
 struct Pokemon {
-	// sourcery: JSONKey = "identifier"
 	let id: String
 	let name: String
 	let height: Float
