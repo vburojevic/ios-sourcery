@@ -8,9 +8,6 @@
 
 import Foundation
 
-extension Pokemon: AutoEquatable, AutoHashable, AutoLenses {}
-extension PokemonType: AutoCases {}
-
 enum PokemonType {
 	case fire
 	case water

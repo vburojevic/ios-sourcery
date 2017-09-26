@@ -42,17 +42,5 @@ fileprivate func hashDictionary<T: Hashable, U: Hashable>(_ dictionary: [T: U]?)
 
 
 // MARK: - AutoHashable for classes, protocols, structs
-// MARK: - Pokemon AutoHashable
-extension Pokemon: Hashable {
-    internal var hashValue: Int {
-        return combineHashes([
-            id.hashValue,
-            name.hashValue,
-            height.hashValue,
-            weight.hashValue,
-            type.hashValue,
-            0])
-    }
-}
 
 // MARK: - AutoHashable for Enums

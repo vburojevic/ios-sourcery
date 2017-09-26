@@ -29,35 +29,3 @@ func |> <A, B, C> (f: @escaping (A) -> B, g: @escaping (B) -> C) -> (A) -> C {
     return { g(f($0)) }
 }
 
-extension Pokemon {
-  static let idLens = Lens<Pokemon, String>(
-    get: { $0.id },
-    set: { id, pokemon in
-       Pokemon(id: id, name: pokemon.name, height: pokemon.height, weight: pokemon.weight, type: pokemon.type)
-    }
-  )
-  static let nameLens = Lens<Pokemon, String>(
-    get: { $0.name },
-    set: { name, pokemon in
-       Pokemon(id: pokemon.id, name: name, height: pokemon.height, weight: pokemon.weight, type: pokemon.type)
-    }
-  )
-  static let heightLens = Lens<Pokemon, Float>(
-    get: { $0.height },
-    set: { height, pokemon in
-       Pokemon(id: pokemon.id, name: pokemon.name, height: height, weight: pokemon.weight, type: pokemon.type)
-    }
-  )
-  static let weightLens = Lens<Pokemon, Float>(
-    get: { $0.weight },
-    set: { weight, pokemon in
-       Pokemon(id: pokemon.id, name: pokemon.name, height: pokemon.height, weight: weight, type: pokemon.type)
-    }
-  )
-  static let typeLens = Lens<Pokemon, PokemonType>(
-    get: { $0.type },
-    set: { type, pokemon in
-       Pokemon(id: pokemon.id, name: pokemon.name, height: pokemon.height, weight: pokemon.weight, type: type)
-    }
-  )
-}

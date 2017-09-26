@@ -7,9 +7,3 @@
 //
 
 import Foundation
-
-protocol AutoEquatable {}
-protocol AutoCases {}
-protocol AutoHashable {}
-protocol AutoLenses {}
-protocol AutoMockable {}

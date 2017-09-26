@@ -17,15 +17,15 @@ protocol SampleWireframeInterface: WireframeInterface {
     func navigate(to option: SampleNavigationOption)
 }
 
-protocol SampleViewInterface: ViewInterface, AutoMockable {
+protocol SampleViewInterface: ViewInterface {
 	func showLoading()
 	func hideLoading()
 }
 
-protocol SamplePresenterInterface: PresenterInterface, AutoMockable {
+protocol SamplePresenterInterface: PresenterInterface {
 	func loadData()
 }
 
-protocol SampleInteractorInterface: InteractorInterface, AutoMockable {
+protocol SampleInteractorInterface: InteractorInterface {
 	func loadPokemons()
 }
